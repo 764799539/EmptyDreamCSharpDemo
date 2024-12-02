@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using NativeDependencyInjection_IOC.Inject;
-using NativeDependencyInjection_IOC.Inject.Repository;
+using IOC_NativeDependencyInjection.Inject;
+using IOC_NativeDependencyInjection.Inject.Repository;
 
-namespace NativeDependencyInjection_IOC
+namespace IOC_NativeDependencyInjection
 {
     /// <summary>
     /// 原生依赖注入

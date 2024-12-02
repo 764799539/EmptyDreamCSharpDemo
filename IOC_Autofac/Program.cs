@@ -1,3 +1,3 @@
-﻿using Autofac_IOC;
+﻿using IOC_Autofac;
 
 new AutofacDependencyInjection().Base();

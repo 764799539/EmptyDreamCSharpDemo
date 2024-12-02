@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autofac_IOC.Inject.Repository
+namespace IOC_Autofac.Inject.Repository
 {
     public class Repository : IRepository
     {

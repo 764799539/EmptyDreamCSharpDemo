@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NativeDependencyInjection_IOC.Inject
+namespace IOC_NativeDependencyInjection.Inject.Repository
 {
-    public interface IProductService
+    public interface IRepository
     {
-        string GetProductList();
+        string ToList();
     }
 }

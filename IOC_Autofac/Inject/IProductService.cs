@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autofac_IOC.Inject
+namespace IOC_Autofac.Inject
 {
     public interface IProductService
     {

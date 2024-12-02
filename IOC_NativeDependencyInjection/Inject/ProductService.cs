@@ -1,18 +1,24 @@
-﻿using Autofac_IOC.Inject.Repository;
+﻿using IOC_NativeDependencyInjection.Inject.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autofac_IOC.Inject
+namespace IOC_NativeDependencyInjection.Inject
 {
     public class ProductService : IProductService
     {
+        public ProductService(IRepository productRepository)
+        {
+            ProductRepository = productRepository;
+        }
+
         /// <summary>
-        /// 需要被注入的依赖(Autofac可以直接属性注入)
+        /// 需要被注入的依赖
         /// </summary>
         public required IRepository ProductRepository { get; set; }
+
 
         /// <summary>
         /// 获取商品列表
