@@ -1,0 +1,2 @@
+﻿ApplicationInfo.ApplicationName=Configuration_Native_Custom
+ApplicationInfo.Version=1.0.0
