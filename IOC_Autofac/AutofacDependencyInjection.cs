@@ -1,7 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Autofac;
 using IOC_Autofac.Inject;
-using IOC_Autofac.Inject.Repository;
-using Autofac;
 using System.Reflection;
 
 namespace IOC_Autofac
@@ -15,7 +13,7 @@ namespace IOC_Autofac
         /// 
         /// </summary>
         public void Base()
-        { 
+        {
             // 创建ContainerBuilder
             ContainerBuilder ContainerBuilder = new();
 

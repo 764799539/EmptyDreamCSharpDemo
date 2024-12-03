@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IOC_Autofac.Inject.Repository
+namespace IOC_NativeDependencyInjection.Inject.Repository
 {
-    public class RedisRepository : IRepository
+    public class Repository : IRepository
     {
         /// <summary>
         /// 列表查询
         /// </summary>
         /// <returns></returns>
-        public string ToList() => "RedisRepository取出的商品列表";
+        public string ToList() => "Repository列表";
     }
 }
