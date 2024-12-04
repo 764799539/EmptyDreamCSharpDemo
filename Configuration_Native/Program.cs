@@ -1,4 +1,5 @@
-﻿using Configuration_Native.Custom.Text;
+﻿using Configuration_Native.Binds;
+using Configuration_Native.Custom.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Yaml;
 
@@ -13,6 +14,11 @@ string? JsonApplicationName = JsonConfiguration["ApplicationInfo:ApplicationName
 string? JsonVersion = JsonConfiguration["ApplicationInfo:Version"];
 
 Console.WriteLine($"JsonConfiguration:{JsonApplicationName}:{JsonVersion}");
+
+//// 配置绑定的读取配置信息
+//ApplicationInfo Info = new();
+//JsonConfiguration.GetSection("ApplicationInfo").Bind(Info);
+//Console.WriteLine($"JsonConfiguration:{Info.ApplicationName}:{Info.Version}");
 #endregion
 
 #region XML
