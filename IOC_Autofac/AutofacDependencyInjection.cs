@@ -22,7 +22,7 @@ namespace IOC_Autofac
             ContainerBuilder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
                             //.Where(t => t.GetInterfaces().Any(x => x == typeof(IRepository))) // 实现注册过滤（也可使用特性过滤 ）
                             .AsImplementedInterfaces() // 只要实现了接口的都实现注册
-                            ;    // 开发属性依赖注入
+                            ;    //.PropertiesAutowired() 开发属性依赖注入
 
             // 构造IOC容器
             var Container = ContainerBuilder.Build();
