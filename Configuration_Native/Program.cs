@@ -7,6 +7,10 @@ using Microsoft.Extensions.Configuration.Yaml;
 // 构建配置对象
 ConfigurationBuilder JsonBuilder = new();
 JsonBuilder.AddJsonFile("appsettings.json");
+
+// 如下方式添加配置文件会自动检测变化后自动刷新配置，依靠FileWatch
+// JsonBuilder.AddJsonFile("appsettings.json",false,true);
+
 IConfiguration JsonConfiguration = JsonBuilder.Build();
 
 // 读取配置信息
